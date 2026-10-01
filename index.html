@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>English Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="slideshow">
+        <!slide1>
+        <section class="slide active">
+            <h1>My Project</h1>
+
+            <p>
+                INTRO
+            </p>
+
+            <button onclick="nextSlide()">Next →</button>
+        </section>
+        <!slide2>
+        <section class="slide">
+
+            <h2>Guess the Percentage</h2>
+
+            <p>
+                What percentage do you think the answer is?
+            </p>
+
+            <div class="guess-box">
+
+                <input
+                    type="range"
+                    id="percentageSlider"
+                    min="0"
+                    max="100"
+                    value="50"
+                >
+
+                <p>
+                    Your guess:
+                    <strong>
+                        <span id="guessValue">50</span>%
+                    </strong>
+                </p>
+
+                <button onclick="revealAnswer()">
+                    Reveal Answer
+                </button>
+
+            </div>
+
+            <div id="answer" class="answer hidden">
+
+                <h3>The actual answer is 73%</h3>
+
+                <p>
+                    Put your explanation paragraph here.
+                    You can explain why the answer is what it is,
+                    give some interesting information, or discuss
+                    what the user's guess means.
+                </p>
+
+            </div>
+
+            <button onclick="previousSlide()">← Back</button>
+            <button onclick="nextSlide()">Next →</button>
+
+        </section>
+        <!slide3>
+        <section class="slide">
+            <h2>Another Slide</h2>
+            <p>
+                Stuff
+            </p>
+
+            <button onclick="previousSlide()">← Back</button>
+            <button onclick="nextSlide()">Next →</button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Lucidia", monospace;
+
+    background: #f8dce9;
+    color: #5c3948;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow {
+    width: 90%;
+    max-width: 900px;
+    min-height: 500px;
+}
+
+.slide {
+    display: none;
+
+    background: #fff8fb;
+    border: 3px solid #d99ab7;
+    border-radius: 20px;
+
+    padding: 50px;
+    min-height: 500px;
+
+    text-align: center;
+
+    box-shadow: 8px 8px 0px #d9a5ba;
+}
+
+.slide.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #c45d88;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #c45d88;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+
+    border: 2px solid #c45d88;
+    border-radius: 10px;
+
+    background: #f2b7d0;
+    color: #5c3948;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e99abb;
+}
+
+.guess-box {
+    width: 80%;
+    max-width: 600px;
+
+    margin: 30px 0;
+}
+
+#percentageSlider {
+    width: 100%;
+    accent-color: #c45d88;
+}
+
+.answer {
+    max-width: 650px;
+
+    padding: 20px;
+
+    margin-top: 10px;
+
+    background: #fce8f1;
+
+    border-radius: 15px;
+
+    border: 2px dashed #d99ab7;
+}
+
+
+.hidden {
+    display: none;
+}
