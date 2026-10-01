@@ -107,3 +107,31 @@ button:hover {
 .hidden {
     display: none;
 }
+
+.numbered-text {
+    text-align: left;
+    align-items: flex-start !important;
+}
+
+.numbered-item {
+    display: flex;
+    gap: 25px;
+
+    width: 100%;
+    max-width: 750px;
+    margin: 15px 0;
+}
+
+.numbered-item > span {
+    color: #c45d88;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.numbered-item h3 {
+    margin: 0;
+}
+
+.numbered-item p {
+    margin-top: 5px;
+}
