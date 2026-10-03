@@ -135,3 +135,20 @@ button:hover {
 .numbered-item p {
     margin-top: 5px;
 }
+
+.example {
+    color: rgb(117, 109, 109);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.emph {
+    color: #c45d88;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.quote {
+    color: #c45d88;
+    font-weight: bold;
+}
